@@ -1,43 +1,121 @@
+
+
 <html>
+	
+    
           
-          
-          
+<style>	    
+	body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #000;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.conic {
+	position: relative;
+	z-index: 0;
+	width: 900px;
+	height: 300px;
+	margin: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 10rem;
+	content: centre;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -70%;
+		width: 200%;
+		height: 300%;
+		background-color: #91939f;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+
+		animation: rotate 40s linear infinite;
+	}
+	
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+	
+		margin:10px;
+		width: calc(100% - 1px);
+		height: calc(100% - 1px);
+		background: #000;
+		border-radius: 500px;
+	}
+}
+
+.conic-demo::after {
+	opacity: 0.1;
+}
+</style> 
 <body style = "background-color: #d8eddd;">
+<!-- 
 <a href ="mysterywordpp.html">mypp</a>
-          <a href ="mysterywordapp.html">mysteryword-app</a>
-      <table style = "margin:300px;">
+          <a href ="mysterywordapp.html">mysteryword-app</a> -->
+
+      <table class="conic conic-demo" >
   <tr>
+	 
+    <th></th>
+    <th></th>
+     <th> &nbsp</th>
+  </tr>
+   <tr>
     <th>Project</th>
     <th>Link</th>
-             <th>Status</th>
+    <th>Status</th>
   </tr>
   <tr>
-    <td>QuickMath</td>
+	
+    <td> &nbsp 1 QuickMath</td>
             <td><a href = "https://github.com/subhash1e/quickMath">Link</a></td>
              <td>Ongoing.......</td>
   </tr>
    <tr>
-    <td>Contract-farming-app</td>
+    <td>  &nbsp 2 Contract-farming-app</td>
             <td><a href = "https://github.com/subhash1e/contractFarming">Link</a></td>
               <td>Ongoing.......</td>
   </tr>
    <tr>
-    <td>Recode-learning_app</td>
+    <td> &nbsp 3 Recode-learning_app</td>
             <td><a href = "https://github.com/subhash1e/Recode">Link</a></td>
               <td>Ongoing.......</td>
   </tr>
                 
                  </tr>
    <tr>
-    <td>Mystery word</td>
+    <td>  &nbsp 4 Mystery word</td>
             <td><a href = "https://github.com/subhash1e/randomWords">Link</a></td>
               <td>Ongoing.......</td>
   </tr>
           <tr>
-    <td>Calculator</td>
+    <td> &nbsp 5 Calculator</td>
             <td><a href = "https://github.com/subhash1e/MyCalculator">Link</a></td>
               <td>v1 Completed</td>
   </tr>
 </table>
+
 </body>
+
+	
+	
+   
 </html>
